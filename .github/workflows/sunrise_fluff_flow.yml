@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: "actions/checkout@v2"
-      - name: show-ls
+      - id: show-ls
         run: |
           ls
-      - name: show-pwd
+      - id: show-pwd
         run: |
           pwd
       - uses: "actions/setup-python@v2"
