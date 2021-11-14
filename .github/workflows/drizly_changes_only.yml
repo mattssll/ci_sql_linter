@@ -9,12 +9,12 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
-      - name: show ls
-      run: |
-        ls
-      - name: show pwd
-      run: |
-        pwd
+      - name: show-ls
+        run: |
+          ls
+      - name: show-pwd
+        run: |
+          pwd
       - name: Install Python
         uses: "actions/setup-python@v2"
         with:
