@@ -8,10 +8,10 @@ jobs:
     steps:
       - uses: "actions/checkout@v2"
       - name: show ls
-      run: |
+        run: |
         ls
         - name: show pwd
-      run: |
+        run: |
         pwd
       - uses: "actions/setup-python@v2"
         with:
