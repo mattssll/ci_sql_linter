@@ -10,7 +10,7 @@ jobs:
       - name: show ls
         run: |
         ls
-        - name: show pwd
+      - name: show pwd
         run: |
         pwd
       - uses: "actions/setup-python@v2"
