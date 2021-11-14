@@ -7,14 +7,10 @@ jobs:
   lint-models:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - id: show-ls
         run: |
           ls
-      - name: pwd
-        uses: actions/checkout@v2
-        run: |
-          pwd
       - name: Install Python
         uses: "actions/setup-python@v2"
         with:

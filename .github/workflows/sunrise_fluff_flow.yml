@@ -6,11 +6,8 @@ jobs:
   lint-models:
     runs-on: ubuntu-latest
     steps:
-      - uses: "actions/checkout@v2"
-      - name: show-ls
-        run: |
-          ls
-      - name: show-pwd
+      - uses: actions/checkout@v2
+      - id: show-ls
         run: |
           pwd
       - uses: "actions/setup-python@v2"
