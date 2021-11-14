@@ -11,14 +11,13 @@ jobs:
       - id: show-ls
         run: |
           ls
-      - name: Install Python
+      - id: Install-Python
         uses: "actions/setup-python@v2"
         with:
           python-version: "3.7"
-      - name: install sqlfluff
+      - id: install-sqlfluff
         run: "pip install sqlfluff"
-      - name: Get changed files
-        id: get_file_changes
+      - id: Get-changed-files
         uses: trilom/file-changes-action@v1.2.4
         with:
           output: ' '

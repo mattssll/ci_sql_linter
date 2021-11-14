@@ -10,13 +10,13 @@ jobs:
       - id: show-ls
         run: |
           pwd
-      - name: Install Python
+      - id: Install-Python
       - uses: "actions/setup-python@v2"
         with:
             python-version: "3.8"
-      - name: Install SQLFluff
+      - id: Install-SQLFluff
         run: "pip install sqlfluff==0.3.6"
-      - name: Lint models
+      - id: Lint-models
         run: "sqlfluff lint src/models"
-      - name: Lint fix formatting
+      - id: Lint-fix-formatting
         run: "sqlfluff fix src/models"
