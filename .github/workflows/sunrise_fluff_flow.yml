@@ -7,12 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: "actions/checkout@v2"
-      - name: show ls
+      - name: show-ls
         run: |
-        ls
-      - name: show pwd
+          ls
+      - name: show-pwd
         run: |
-        pwd
+          pwd
       - uses: "actions/setup-python@v2"
         with:
             python-version: "3.8"
