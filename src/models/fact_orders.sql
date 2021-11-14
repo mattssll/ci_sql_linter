@@ -1,4 +1,4 @@
 SELECT orderid
 
 
-FROM dwh.fact_order;
+FROM dwh.fact_orderr;
