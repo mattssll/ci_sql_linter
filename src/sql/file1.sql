@@ -1,5 +1,5 @@
   SELECT
 
- orderid
+ orderid, test2, ter
 
  FROM dwh.fact_orders;
