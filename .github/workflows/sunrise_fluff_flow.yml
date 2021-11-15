@@ -31,8 +31,8 @@ jobs:
       - name: Lint modelss
         run: "sqlfluff lint --nofail src/models"
       - name: Lint fix formatting
-        run: "Y | sqlfluff fix -s src/models"
+        run: "qlfluff fix --s --force src/models"
       - name: Lint models2
         run: "sqlfluff lint --nofail src/sql"
       - name: Lint fix formatting2
-        run: "sqlfluff fix --force src"
+        run: "sqlfluff fix --s --force src"
